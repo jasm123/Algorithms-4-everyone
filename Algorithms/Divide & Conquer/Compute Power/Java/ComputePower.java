@@ -26,7 +26,7 @@ public class ComputePower {
 		if (p == 1)
 			return n;			//n^1=n
 		while (p != 0) {
-			if (p % 2 == 1)
+			if (p & 1)
 				result *= base;	//If exponent is odd,multiply n with result
 			p >>= 1;			//p=p/2;
 			base *= base;		//Change n to n^2
